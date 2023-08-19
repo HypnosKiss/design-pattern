@@ -68,11 +68,11 @@ trait SinglePattern
             $alias .= ':' . md5(json_encode($config));
         }
         // 判断是否已经存在实例化对象
-        if (empty(static::$instanceList[$alias])) {
-            static::$instanceList[$alias] = new static($config);// 不存在，则实例化一个
+        if (empty(self::$instanceList[$alias])) {
+            self::$instanceList[$alias] = new static($config);// 不存在，则实例化一个
         }
 
-        return static::$instanceList[$alias];
+        return self::$instanceList[$alias];
     }
 
     /**
