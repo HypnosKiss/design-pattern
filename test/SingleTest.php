@@ -1,6 +1,6 @@
 <?php
 
-use Sweeper\DesignPattern\SinglePattern\SinglePattern;
+use Sweeper\DesignPattern\MultiPattern\MultiPattern;
 
 require '../vendor/autoload.php';
 
@@ -9,7 +9,7 @@ require '../vendor/autoload.php';
  * User: Sweeper
  * Time: 2023/8/19 15:39
  */
-class SingleTest extends SinglePattern
+class MultiTest extends MultiPattern
 {
 
     public function test()
@@ -22,7 +22,7 @@ class SingleTest extends SinglePattern
 class SingleTraitsTest
 {
 
-    use \Sweeper\DesignPattern\Traits\SinglePattern;
+    use \Sweeper\DesignPattern\Traits\Multiton;
 
     public function test()
     {
@@ -31,7 +31,7 @@ class SingleTraitsTest
 
 }
 var_dump('===== SingleTest::instance =====');
-$obj = SingleTest::instance(['func' => __FUNCTION__, 'debug' => debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS)]);
+$obj = MultiTest::instance(['func' => __FUNCTION__, 'debug' => debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS)]);
 $obj->test();
 
 var_dump('===== SingleTraitsTest::instance =====');
