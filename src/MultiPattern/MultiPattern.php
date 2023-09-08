@@ -7,10 +7,10 @@
 
 namespace Sweeper\DesignPattern\MultiPattern;
 
-use Sweeper\DesignPattern\Traits\Multiton;
+use Sweeper\DesignPattern\Traits\MultiPattern as MultiPatternTrait;
 
 class MultiPattern
 {
 
-    use Multiton;
+    use MultiPatternTrait;
 }

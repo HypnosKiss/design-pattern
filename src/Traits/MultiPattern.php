@@ -12,9 +12,9 @@ namespace Sweeper\DesignPattern\Traits;
  * Created by PhpStorm.
  * User: Sweeper
  * Time: 2023/8/18 22:49
- * @Path \Sweeper\DesignPattern\Traits\Multiton
+ * @Path \Sweeper\DesignPattern\Traits\MultiPattern
  */
-trait Multiton
+trait MultiPattern
 {
 
     /** @var array 配置信息 */

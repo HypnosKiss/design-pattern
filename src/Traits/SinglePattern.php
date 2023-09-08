@@ -12,9 +12,9 @@ namespace Sweeper\DesignPattern\Traits;
  * Created by PhpStorm.
  * User: Sweeper
  * Time: 2023/8/18 22:49
- * @Path \Sweeper\DesignPattern\Traits\Singleton
+ * @Path \Sweeper\DesignPattern\Traits\SinglePattern
  */
-trait Singleton
+trait SinglePattern
 {
 
     /** @var array 配置信息 */
@@ -75,11 +75,11 @@ trait Singleton
      */
     public static function getInstance(array $config = []): self
     {
-        if (null === static::$instance) {
-            static::$instance = new static($config);
+        if (null === self::$instance) {
+            self::$instance = new static($config);
         }
 
-        return static::$instance;
+        return self::$instance;
     }
 
     /**
