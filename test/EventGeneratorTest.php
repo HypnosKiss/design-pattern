@@ -5,9 +5,9 @@ use Sweeper\DesignPattern\Contracts\ObserverPattern\ObserverSubject;
 use Sweeper\DesignPattern\ObserverPattern\EventGenerator;
 use Sweeper\DesignPattern\Traits\EventGeneratorTrait;
 
-require '../vendor/autoload.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
 
-class Observer implements ObserverInterface
+class Observer extends \PHPUnit\Framework\TestCase implements ObserverInterface
 {
 
     public function triggerEvent(ObserverSubject $subject, array $data = [])

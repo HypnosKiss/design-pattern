@@ -3,7 +3,7 @@
 use Sweeper\DesignPattern\MultiPattern\MultiPattern;
 use Sweeper\DesignPattern\SinglePattern\SinglePattern;
 
-require '../vendor/autoload.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
 
 /**
  * Created by PhpStorm.
