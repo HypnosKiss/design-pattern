@@ -20,6 +20,12 @@
     "autoload": {
         "psr-4": {
             "Sweeper\\DesignPattern\\": "src/"
+        },
+        "files": []
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "test"
         }
     },
     "config": {
