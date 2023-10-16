@@ -1,5 +1,7 @@
 <?php
 
+namespace Sweeper\Test;
+
 use Sweeper\DesignPattern\Contracts\ObserverPattern\ObserverInterface;
 use Sweeper\DesignPattern\Contracts\ObserverPattern\ObserverSubject;
 use Sweeper\DesignPattern\ObserverPattern\EventGenerator;

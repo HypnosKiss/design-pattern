@@ -31,6 +31,8 @@
  * Copyright (c) 2023 by Sweeper email: wili.lixiang@gmail.com, All Rights Reserved.
  */
 
+namespace Sweeper\Test;
+
 use PHPUnit\Framework\TestCase;
 use Sweeper\DesignPattern\Example\Creational\AbstractFactory\CsvWriter;
 use Sweeper\DesignPattern\Example\Creational\AbstractFactory\JsonWriter;
@@ -46,9 +48,11 @@ require dirname(__DIR__) . '/vendor/autoload.php';
 /**
  * Summary of AbstractFactoryTest
  * @test .\vendor\bin\phpunit src\Example\Creational\AbstractFactory\Tests\AbstractFactoryTest.php
+ * @test .\vendor\bin\phpunit .\test\
  */
 final class AbstractFactoryTest extends TestCase
 {
+
     public function testCanCreateDigitalProduct()
     {
         $factory = new ProductFactory();
@@ -95,9 +99,10 @@ final class AbstractFactoryTest extends TestCase
     {
         return [
             [new UnixWriterFactory()],
-            [new WinWriterFactory()]
+            [new WinWriterFactory()],
         ];
     }
+
     /**
      * @dataProvider provideFactory
      */
@@ -117,4 +122,5 @@ final class AbstractFactoryTest extends TestCase
         $this->assertInstanceOf(JsonWriter::class, $writerFactory->createJsonWriter());
         $this->assertInstanceOf(CsvWriter::class, $writerFactory->createCsvWriter());
     }
+
 }
