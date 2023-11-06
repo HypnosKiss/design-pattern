@@ -1,6 +1,6 @@
 <?php
 
-namespace Sweeper\Test;
+namespace Sweeper\DesignPattern\Test;
 
 use Sweeper\DesignPattern\Contracts\ObserverPattern\ObserverInterface;
 use Sweeper\DesignPattern\Contracts\ObserverPattern\ObserverSubject;

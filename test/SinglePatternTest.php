@@ -1,6 +1,6 @@
 <?php
 
-namespace Sweeper\Test;
+namespace Sweeper\DesignPattern\Test;
 
 use Sweeper\DesignPattern\MultiPattern\MultiPattern;
 use Sweeper\DesignPattern\SinglePattern\SinglePattern;

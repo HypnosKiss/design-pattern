@@ -31,7 +31,7 @@
  * Copyright (c) 2023 by Sweeper email: wili.lixiang@gmail.com, All Rights Reserved.
  */
 
-namespace Sweeper\Test;
+namespace Sweeper\DesignPattern\Test;
 
 use PHPUnit\Framework\TestCase;
 use Sweeper\DesignPattern\Example\Creational\AbstractFactory\CsvWriter;
